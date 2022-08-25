@@ -64,7 +64,7 @@ api_router.add_api_route(
    response_model=GetProvinsiResponseModel
 )
 api_router.add_api_route(
-    '/kabupaten/',
+    '/kabupaten',
     get_all_kabupaten,
     tags=['Kabupaten'],
     response_model=GetAllKabupatenResponseModel
