@@ -1,6 +1,6 @@
 # API Lokasi Indonesia
 
-API Data all Province, Distric, Sub Distric and Urban in Indonesia
+An API that provices the names of Province, Districts, Sub Districts and Urban in Indonesia
 
 ## Getting Started
 
