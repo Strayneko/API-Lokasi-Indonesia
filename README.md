@@ -1,13 +1,13 @@
 # API Lokasi Indonesia
 
-An API that provides all the names of Province, Districts, Sub Ddistrictsistrics, and Urban in Indonesia
+API Data all Province, Distric, Sub Distric and Urban in Indonesia
 
 ## Getting Started
 
 1.Clone project repository
 
 ```bash
-    git clone https://github.com/Strayneko/API-Lokasi-Indonesia.git
+    git clone https://github.com/RennnD/API-Lokasi-Indonesia.git
 ```
 
 2.Change directory to repository folder
@@ -57,3 +57,11 @@ An API that provides all the names of Province, Districts, Sub Ddistrictsistrics
 | [`/api/kelurahan/{id_kecamatan}`](https://strayneko.herokuapp.com/api/kelurahan/1)                            | `GET`  | id_kecamatan        | Integer 0-9                                         | Show Kelurahan by `id_kecamatan` (see `id` from `/api/kecamatan`) |
 | [`/api/search/{area_type}/{id_area}`](https://strayneko.herokuapp.com/api/search/kelurahan/13)                | `GET`  | area_type & id_area | String provinsi, kabupaten, kelurahan & Integer 0-9 | Filter data by `id_area`                                          |
 | [`/api/search/{area_type}/?keyword=`](https://strayneko.herokuapp.com/api/search/kecamatan/?keyword=pemalang) | `GET`  | keyword             | String a-Z                                          | Search data by keyword                                            |
+
+## Public Use
+
+[https://strayneko.herokuapp.com/](https://strayneko.herokuapp.com/)
+
+## License
+
+This project is licensed under the [`Apache License`](https://github.com/Strayneko/API-Lokasi-Indonesia/blob/main/LICENSE), Version 2.0.
