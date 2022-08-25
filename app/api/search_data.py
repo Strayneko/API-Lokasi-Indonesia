@@ -33,7 +33,8 @@ async def search_data(type: str = '', keyword: str = ''):
         
     with Session(db_engine) as session:
         # determine model for each area type
-        match type:
+        
+        match type.lower():
             case 'provinsi':
                 data = session.query(Provinsi.id, Provinsi.nama).filter(Provinsi.nama.contains(keyword))
             case 'kabupaten':
@@ -67,7 +68,7 @@ async def search_data(type: str = '', keyword: str = ''):
 async def filter_data(type: str = '', id_area: int = 0):
     with Session(db_engine) as session:
         # determine model for each area type
-        match type:
+        match type.lower():
             case 'provinsi':
                 data = session.query(Provinsi.id, Provinsi.nama).filter(Provinsi.id==id_area)
             case 'kabupaten':
