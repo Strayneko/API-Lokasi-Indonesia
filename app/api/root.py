@@ -36,6 +36,7 @@ async def root(request: Request):
             'email': strings.CREATOR_MAIL,
         },
         'project_repository': strings.PROJECT_REPOSITORY,
-        'docs': request.base_url._url + 'docs'
+        'docs': request.base_url._url + 'docs',
+        'api_url': request.base_url._url + 'api'
     }
     return RootResponseModel(message=strings.ROOT_MESSAGE, data=data, total=1);
