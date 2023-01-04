@@ -40,27 +40,27 @@ An API that provices the names of Province, Districts, Sub Districts and Urban i
 
 ### Base URL
 
-[`http://127.0.0.1:8000`](https://strayneko.herokuapp.com)
+[`http://127.0.0.1:8000`](https://strayneko.fly.dev/)
 
 ### Endpoint Docs
 
-[`http://127.0.0.1:8000/docs`](https://strayneko.herokuapp.com/docs)
+[`http://127.0.0.1:8000/docs`](https://strayneko.fly.dev/docs)
 
 | Endpoint                                                                                                      | Method | Parameter           | Type                                                | Description                                                       |
 | :------------------------------------------------------------------------------------------------------------ | :----- | :------------------ | :-------------------------------------------------- | :---------------------------------------------------------------- |
-| [`/api/provinsi`](https://strayneko.herokuapp.com/api/provinsi)                                               | `GET`  | None                | None                                                | Show all Provinsi                                                 |
-| [`/api/kabupaten`](https://strayneko.herokuapp.com/api/kabupaten)                                             | `GET`  | None                | None                                                | Show all kabupaten                                                |
-| [`/api/kabupaten/{id_provinsi}`](https://strayneko.herokuapp.com/api/kabupaten/1)                             | `GET`  | id_provinsi         | Integer 0-9                                         | Show kabupaten by `id_provinsi` (see `id` from `/api/provinsi`)   |
-| [`/api/kecamatan?limit=10&offset=0`](https://strayneko.herokuapp.com/api/kecamatan?limit=10&offset=0)         | `GET`  | limit & offset      | Integer 0-9                                         | Show all Kecamatan                                                |
-| [`/api/kecamatan/{id_kabupaten}`](https://strayneko.herokuapp.com/api/kecamatan/1)                            | `GET`  | id_kabupaten        | Integer 0-9                                         | Show Kecamatan by `id_kabupaten` (see `id` from `/api/kabupaten`) |
-| [`/api/kelurahan?limit=10&offset=0`](https://strayneko.herokuapp.com/api/kelurahan?limit=10&offset=0)         | `GET`  | limit & offset      | Integer 0-9                                         | Show all Kelurahan                                                |
-| [`/api/kelurahan/{id_kecamatan}`](https://strayneko.herokuapp.com/api/kelurahan/1)                            | `GET`  | id_kecamatan        | Integer 0-9                                         | Show Kelurahan by `id_kecamatan` (see `id` from `/api/kecamatan`) |
-| [`/api/search/{area_type}/{id_area}`](https://strayneko.herokuapp.com/api/search/kelurahan/13)                | `GET`  | area_type & id_area | String provinsi, kabupaten, kelurahan & Integer 0-9 | Filter data by `id_area`                                          |
-| [`/api/search/{area_type}/?keyword=`](https://strayneko.herokuapp.com/api/search/kecamatan/?keyword=pemalang) | `GET`  | keyword             | String a-Z                                          | Search data by keyword                                            |
+| [`/api/provinsi`](https://strayneko.fly.dev/api/provinsi)                                               | `GET`  | None                | None                                                | Show all Provinsi                                                 |
+| [`/api/kabupaten`](https://strayneko.fly.dev/api/kabupaten)                                             | `GET`  | None                | None                                                | Show all kabupaten                                                |
+| [`/api/kabupaten/{id_provinsi}`](https://strayneko.fly.dev/api/kabupaten/1)                             | `GET`  | id_provinsi         | Integer 0-9                                         | Show kabupaten by `id_provinsi` (see `id` from `/api/provinsi`)   |
+| [`/api/kecamatan?limit=10&offset=0`](https://strayneko.fly.dev/api/kecamatan?limit=10&offset=0)         | `GET`  | limit & offset      | Integer 0-9                                         | Show all Kecamatan                                                |
+| [`/api/kecamatan/{id_kabupaten}`](https://strayneko.fly.dev/api/kecamatan/1)                            | `GET`  | id_kabupaten        | Integer 0-9                                         | Show Kecamatan by `id_kabupaten` (see `id` from `/api/kabupaten`) |
+| [`/api/kelurahan?limit=10&offset=0`](https://strayneko.fly.dev/kelurahan?limit=10&offset=0)         | `GET`  | limit & offset      | Integer 0-9                                         | Show all Kelurahan                                                |
+| [`/api/kelurahan/{id_kecamatan}`](https://strayneko.fly.dev//kelurahan/1)                            | `GET`  | id_kecamatan        | Integer 0-9                                         | Show Kelurahan by `id_kecamatan` (see `id` from `/api/kecamatan`) |
+| [`/api/search/{area_type}/{id_area}`](https://strayneko.fly.dev/search/kelurahan/13)                | `GET`  | area_type & id_area | String provinsi, kabupaten, kelurahan & Integer 0-9 | Filter data by `id_area`                                          |
+| [`/api/search/{area_type}/?keyword=`](https://strayneko.fly.dev/search/kecamatan/?keyword=pemalang) | `GET`  | keyword             | String a-Z                                          | Search data by keyword                                            |
 
 ## Public Use
 
-[https://strayneko.herokuapp.com/](https://strayneko.herokuapp.com/)
+[https://strayneko.fly.dev/](https://strayneko.fly.dev/)
 
 ## License
 
